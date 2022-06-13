@@ -2,9 +2,9 @@ import React from 'react'
 
 const Loader = () => {
     return (
-        <div className="container">
-            <div class="spinner-border text-danger" role="status">
-                <span class="visually-hidden">Loading...</span>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh"}}>
+            <div className="spinner-border text-danger" role="status">
+                <span className="visually-hidden">Loading...</span>
             </div>
         </div>
     )
