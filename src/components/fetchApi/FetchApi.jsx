@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Loader from '../../Loader'
+import NpmSpin from '../npmSpinner/NpmSpin'
 import AllApiData from './AllApiData'
 
 const FetchApi = () => {
@@ -26,8 +27,9 @@ const FetchApi = () => {
     }, [])
     return (
         <>
+            
             {/* <Loader/> */}
-            {loader && <Loader/>}
+            {loader && <NpmSpin/>}
             {!loader && <AllApiData apiData ={apidata} />}
         </>
     )
