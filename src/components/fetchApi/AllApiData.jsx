@@ -3,7 +3,7 @@ import React from 'react'
 const AllApiData = (props) => {
   return (
     <>
-        <div className='container center' >
+        <div className='container' >
                 <div className="row">
                     {
                         props.apiData.map((curData) => {

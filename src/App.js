@@ -36,6 +36,7 @@ function App() {
       {/* <Formhandle/> */}
       <Router>
         <Navbar home="Home" about="About" menu="Menu" />
+        
         <Routes>
           <Route path="/" element={<FetchApi/>} />
           <Route path="/about" element={<About />} />
